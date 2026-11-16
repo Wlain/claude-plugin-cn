@@ -32,11 +32,11 @@ Load the plugin directory for one Claude Code session:
 claude --plugin-dir /absolute/path/to/claude-plugin-cn
 ```
 
-Claude Code versions that support ZIP plugin directories can load the release
-archive directly:
+If you already have a compatible plugin ZIP on your machine and your version of
+Claude Code supports ZIP plugin directories, load it from its local path:
 
 ```bash
-claude --plugin-dir /absolute/path/to/kling-ai-cn-claude-1.3.1-public.zip
+claude --plugin-dir /absolute/path/to/plugin.zip
 ```
 
 For a persistent installation, distribute the plugin through a trusted Claude
