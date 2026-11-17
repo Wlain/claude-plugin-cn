@@ -1,5 +1,5 @@
 {
-  "name": "kling-ai-china-plugin",
+  "name": "kling-ai-cn",
   "version": "1.3.3",
   "description": "Official Kling AI China Plugin for image and video generation from Gemini CLI.",
   "mcpServers": {
