@@ -1,0 +1,13 @@
+{
+  "name": "kling-ai-china-plugin",
+  "version": "1.3.3",
+  "description": "Official Kling AI China Plugin for image and video generation from Gemini CLI.",
+  "mcpServers": {
+    "kling-ai-china-plugin": {
+      "url": "https://klingai.com/mcp/plugin",
+      "type": "http",
+      "authProviderType": "dynamic_discovery",
+      "description": "Official Kling AI China MCP service. OAuth required; generation uses China Kling credits."
+    }
+  }
+}
