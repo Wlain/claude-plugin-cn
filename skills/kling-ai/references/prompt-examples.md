@@ -2,19 +2,19 @@
 
 ## Suggested prompts in English
 
-- Use Kling to generate a series of three images in one request. Show the same red panda in a vintage spacesuit exiting a space station, drifting past a porthole, and turning to look at the blue Earth.
-- Use Kling 4.0 to generate a 20‑second cinematic video: a mech warrior slams down from height onto the ground, sending out a shockwave that instantly blasts apart rubble and dust, with the camera rapidly pushing in for a powerful impact.
-- Use Kling 4.0 Flash to turn my sneaker product photo into a 20-second, 720p video. Start from the photo, slowly orbit the shoe, and end on a close-up of the upper.
+- Use Kling Image 4.0 to generate three separate, coherent 8K images in one request. Keep the same red panda, vintage spacesuit, and lighting throughout. In image 1, the red panda exits the space station. In image 2, it drifts past a porthole. In image 3, it turns to look at the blue Earth.
+- Use Kling 4.0 to generate a 20-second cinematic video. A mech warrior falls from high above and slams into the ground. A shockwave sends rubble and dust outward on impact as the camera rapidly pushes in on the mech.
+- Use Kling 4.0 Flash to generate a 20-second, 720p video with my sneaker product photo as the first frame. Slowly orbit the shoe, keeping its shape, color, and logo consistent, and end on a close-up of the upper.
 - Use Kling AI to browse the motion library and preview saved motions. After I select one, apply it to my subject image with an available motion-control model to generate a video.
 - Use Kling AI to save the front and side views of my character as my first reusable Element, named “Xiaobai”, to help keep the character consistent in later creations.
 
 ## Suggested prompts in Chinese
 
-- 用可灵一次生成 3 张连续组图。让同一只身穿复古宇航服的小熊猫依次从空间站出舱、掠过舷窗、转身望向蓝色地球
-- 使用可灵 4.0 生成一段 20 秒电影感视频：机甲战士从高空重砸地面，冲击波瞬间震开碎石与尘雾，镜头快速推近，充满力量感
-- 使用可灵 4.0 Flash，把我提供的运动鞋商品图作为首帧，生成一段 20 秒、720p 的视频，镜头缓慢绕过鞋身，最后停在鞋面细节上
-- 使用可灵 AI 查看动作库，预览已保存的动作。选定后，用可用的动作控制模型将该动作应用到我提供的主体图片生成视频
-- 使用可灵 AI 将我提供的角色正面图和侧面图保存为第一个可复用主体，命名为“小白”，方便后续创作时保持角色一致
+- 使用可灵图片 4.0，一次生成一组 3 张连续图像，每张均为独立的 8K 图片。保持同一只小熊猫的外貌、复古宇航服和光照一致。第 1 张从空间站出舱，第 2 张掠过舷窗，第 3 张转身望向蓝色地球。
+- 使用可灵 4.0 生成一段 20 秒的电影感视频。机甲战士从高空坠落并重砸地面，落地瞬间冲击波将碎石与尘雾向外震开，镜头快速推近机甲，突出撞击的力量感。
+- 使用可灵 4.0 Flash，把我提供的运动鞋商品图作为首帧，生成一段 20 秒、720p 的视频。镜头缓慢绕过鞋身，保持鞋型、配色和标志一致，最后停在鞋面细节特写上。
+- 使用可灵 AI 查看动作库，预览已保存的动作。等我选定后，用可用的动作控制模型将该动作应用到我提供的主体图片，生成视频。
+- 使用可灵 AI 将我提供的角色正面图和侧面图保存为第一个可复用主体，命名为“小白”，方便后续创作时保持角色一致。
 
 ## Natural-language requests
 

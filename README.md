@@ -75,9 +75,9 @@ over. Keep only one active Kling connection.
 
 Try one of these prompts in Claude.
 
-- Use Kling to generate a series of three images in one request. Show the same red panda in a vintage spacesuit exiting a space station, drifting past a porthole, and turning to look at the blue Earth.
-- Use Kling 4.0 to generate a 20‑second cinematic video: a mech warrior slams down from height onto the ground, sending out a shockwave that instantly blasts apart rubble and dust, with the camera rapidly pushing in for a powerful impact.
-- Use Kling 4.0 Flash to turn my sneaker product photo into a 20-second, 720p video. Start from the photo, slowly orbit the shoe, and end on a close-up of the upper.
+- Use Kling Image 4.0 to generate three separate, coherent 8K images in one request. Keep the same red panda, vintage spacesuit, and lighting throughout. In image 1, the red panda exits the space station. In image 2, it drifts past a porthole. In image 3, it turns to look at the blue Earth.
+- Use Kling 4.0 to generate a 20-second cinematic video. A mech warrior falls from high above and slams into the ground. A shockwave sends rubble and dust outward on impact as the camera rapidly pushes in on the mech.
+- Use Kling 4.0 Flash to generate a 20-second, 720p video with my sneaker product photo as the first frame. Slowly orbit the shoe, keeping its shape, color, and logo consistent, and end on a close-up of the upper.
 - Use Kling AI to browse the motion library and preview saved motions. After I select one, apply it to my subject image with an available motion-control model to generate a video.
 - Use Kling AI to save the front and side views of my character as my first reusable Element, named “Xiaobai”, to help keep the character consistent in later creations.
 
@@ -89,7 +89,7 @@ Skill does not invent motion creation or deletion tools. Motion control needs
 a subject image and exactly one motion source. Available models, arguments,
 and resource limits always come from the live MCP tools.
 
-- **Images** support text-to-image and reference-guided editing. The plugin prefers the current entry point's available default when it fits the request. A continuous image series requires a model that explicitly supports both series generation and the requested count.
+- **Kling Image 4.0** supports native 8K and up to 10 related images in one generation in Series Mode. The plugin checks the current account's MCP for the model and the requested combination of resolution, count, series mode, and references. When no model is specified, it prefers Kling Image 4.0 for image generation and editing if available and compatible, then a compatible live default or another compatible model. See the [official image guide](https://kling.ai/quickstart/kling-image-4-user-guide).
 - **Kling 4.0** supports text-to-video, image-to-video with first, last, or intermediate keyframes, and omni reference with images, videos, audio, and Elements. It supports 3–30 seconds at 720p, with 1080p available to eligible accounts.
 - **Kling 4.0 Flash** supports text-to-video, image-to-video with a single first frame, and omni reference with images, videos, and Elements. It supports 3–20 seconds at 720p.
 - Both models support smart shot splitting in omni reference, with a choice between generating synchronized sound and retaining source-video audio. A separate audio reference requires a declared audio input slot, as offered by Kling 4.0 omni reference.

@@ -21,10 +21,12 @@
       include `omni_ref_video` when present, even for pure-text requests.
 - [ ] Kling 4.0 and Kling 4.0 Flash recommendations match the model returned by
       the current account and honor its video and reference capabilities.
-- [ ] Suggested prompts cover a three-image series, both 4.0 video variants,
-      motion control, and Element creation in English and Chinese.
-- [ ] Continuous image series selection checks series support and the requested
-      count. Partial results report the number of usable images returned.
+- [ ] Suggested prompts cover a three-image 8K series with Kling Image 4.0,
+      both 4.0 video variants, motion control, and Element creation in English
+      and Chinese.
+- [ ] Continuous image series selection checks that the current account's model
+      supports series mode, the requested count, and resolution together.
+      Partial results report the number of usable images returned.
 - [ ] Model selection is account-scoped; a new tool with only existing
       models does not force migration. User-specified unavailable models are
       not silently replaced, and discovery failures stop selection.

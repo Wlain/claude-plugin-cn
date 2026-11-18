@@ -22,6 +22,10 @@ Use the relevant items below when writing a new prompt or filling a gap.
 
 Translate abstract requests such as "premium," "cinematic," or "high quality" into visible lighting, depth of field, material, color, and composition decisions instead of stacking adjectives.
 
+## Continuous image series
+
+State what stays consistent across the set, such as the subject's appearance, outfit, location, and lighting. Then describe each image in narrative order with one distinct action or composition per image. Ask for separate images in one generation and describe shared references once.
+
 ## Multiple references
 
 Assign roles before writing the creative prompt. Identity, product structure, composition, style, and official logo references are not interchangeable. Transfer only the visual traits the user selected from a style reference; do not transfer identity or composition unintentionally.
