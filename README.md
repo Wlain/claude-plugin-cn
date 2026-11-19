@@ -1,6 +1,55 @@
-# Kling AI CN for Claude
+# 可灵 AI 国内版插件 · Kling AI CN for Claude
 
-Build your own AI creative workflow with Kling MCP.
+在 Claude 里用自然语言生成图片和视频、复用主体、预览动作库，或查询灵感值和任务进度。
+本插件使用 `klingai.com` 的国内账号。使用 `kling.ai` 账号的用户请安装
+[海外版插件](https://github.com/klingai-tech/claude-plugin)。国内外账号、灵感值和任务各自独立。
+
+[国内版可灵 MCP 与 CLI 官方指南](https://klingai.com/app/mcp/guide)
+
+## 快速开始
+
+### Claude 网页版和桌面端
+
+1. 打开 **Customize → Plugins → Add → Add marketplace**，添加 `https://github.com/klingai-tech/claude-plugin-cn`，安装并启用 **Kling AI CN**。
+2. 在插件的 **Connectors** 中点击 **Connect**，在浏览器中登录国内可灵账号并授权。
+3. 在启用了插件的对话中发送下面的[试用提示词](#第一次使用)。
+
+### Claude Code
+
+在终端运行以下命令安装插件并启动 Claude Code。
+
+```bash
+claude plugin marketplace add klingai-tech/claude-plugin-cn
+claude plugin install kling-ai-cn@klingai-cn
+claude
+```
+
+进入 Claude Code 后输入 `/mcp`，选择插件提供的 `kling-ai`，在浏览器中登录国内可灵账号并授权。
+回到 Claude Code 确认连接成功后，即可开始使用。授权由 Claude Code 管理，使用可灵账号即可完成。
+
+### 第一次使用
+
+可以先发一条查询来确认连接，再试生成。
+
+- **查询** · 帮我查看可灵账号当前的灵感值余额。
+- **文生图** · 用可灵生成一张竖版图片，画面是一只柴犬坐在窗边，午后的阳光照在它身上。
+- **图生视频** · 附上一张图片后发送「用这张图作首帧，生成一段 5 秒视频，让镜头缓慢推近。」
+
+生成会消耗灵感值。使用插件的创作 Skill 时，先确认 Claude 列出的模型、参数和参考素材，再提交生成。
+提交后可在同一对话里问「刚才的可灵任务完成了吗？请给我作品链接。」
+
+### 连接排查
+
+- **Claude Code 里找不到 `kling-ai`。** 安装后重新启动 Claude Code，再打开 `/mcp`。
+- **授权过期或连接到另一个账号。** 在客户端的 MCP 或连接器面板断开当前授权，再登录需要使用的国内账号。切换区域前，先查完原区域待跟进的任务，再关闭原连接并启用对应区域插件。
+
+### 手动连接 MCP 或使用 CLI
+
+在支持远程 MCP 和 OAuth 的客户端里，可以添加 `https://klingai.com/mcp` 作为自定义连接器，
+再用国内可灵账号授权。安装本插件时会自动配置 `https://klingai.com/mcp/plugin`。
+同一个助手保留一种可灵接入方式。其他客户端的具体设置和终端 CLI 安装见[国内版官方指南](https://klingai.com/app/mcp/guide)。
+
+## 插件内容
 
 This plugin contains:
 
@@ -15,14 +64,6 @@ This plugin contains:
 
 It does not bundle a local MCP server, MCP App, command, hook, agent, or API
 key. Generation runs on the remote Kling service.
-
-## Install in Claude App
-
-In Customize → Plugins → Add → Add marketplace, add
-`https://github.com/klingai-tech/claude-plugin-cn`, then install **Kling AI CN**.
-Enable only one regional Kling plugin at a time. Use the App's native connector
-controls to connect your China account; Claude Code commands below apply only
-to Claude Code.
 
 ## Install for local review
 
@@ -39,37 +80,12 @@ Claude Code supports ZIP plugin directories, load it from its local path:
 claude --plugin-dir /absolute/path/to/plugin.zip
 ```
 
-For a persistent installation, distribute the plugin through a trusted Claude
-Code marketplace and install `kling-ai-cn@klingai-cn`.
-
-```bash
-claude plugin marketplace add klingai-tech/claude-plugin-cn
-claude plugin install kling-ai-cn@klingai-cn
-```
-
 ## Use with Agent Plugins clients
 
 Install the plugin through a client that supports Agent Plugins 1.0. The root
 `plugin.json` declares the plugin, and `mcp.json` registers the same China MCP
 endpoint as the Claude package. Connect your China account through the client's
 native MCP OAuth flow. The client needs to support Streamable HTTP and OAuth.
-
-## Connect
-
-The bundled `.mcp.json` registers one HTTP server named `kling-ai`. Open
-`/mcp`, select `kling-ai`, and complete OAuth in the browser. The plugin never
-asks users to paste an API key into chat.
-
-Claude Code manages OAuth discovery, client registration, and credentials.
-The plugin does not configure a custom OAuth client name or require users to
-override registration metadata. If authorization fails, use the actual error
-from Claude Code to diagnose the connection.
-
-When switching from the Global connection to the China plugin, finish any
-outstanding task checks in the original region, disconnect the old OAuth
-session, update/reload the plugin, and authorize your China account through
-`/mcp`. Regional accounts, credits, and task IDs must not be assumed to carry
-over. Keep only one active Kling connection.
 
 ## Use
 
