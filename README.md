@@ -34,6 +34,7 @@ claude
 - **查询** · 帮我查看可灵账号当前的灵感值余额。
 - **文生图** · 用可灵生成一张竖版图片，画面是一只柴犬坐在窗边，午后的阳光照在它身上。
 - **图生视频** · 附上一张图片后发送「用这张图作首帧，生成一段 5 秒视频，让镜头缓慢推近。」
+- **HDR 视频** · 用可灵 4.0 生成一段 5 秒、1080p 的 HDR 视频。雨后的街道映着霓虹灯，镜头沿路面缓慢向前移动。
 
 生成会消耗灵感值。使用插件的创作 Skill 时，先确认 Claude 列出的模型、参数和参考素材，再提交生成。
 提交后可在同一对话里问「刚才的可灵任务完成了吗？请给我作品链接。」
@@ -106,7 +107,7 @@ a subject image and exactly one motion source. Available models, arguments,
 and resource limits always come from the live MCP tools.
 
 - **Kling Image 4.0** supports native 8K and up to 10 related images in one generation in Series Mode. The plugin checks the current account's MCP for the model and the requested combination of resolution, count, series mode, and references. When no model is specified, it prefers Kling Image 4.0 for image generation and editing if available and compatible, then a compatible live default or another compatible model. See the [official image guide](https://kling.ai/quickstart/kling-image-4-user-guide).
-- **Kling 4.0** supports text-to-video, image-to-video with first, last, or intermediate keyframes, and omni reference with images, videos, audio, and Elements. It supports 3–30 seconds at 720p, with 1080p available to eligible accounts.
+- **Kling 4.0** supports text-to-video, image-to-video with first, last, or intermediate keyframes, and omni reference with images, videos, audio, and Elements. It supports 3–30 seconds at 720p, with 1080p and 4K available to eligible accounts. All three entry points offer optional HDR output at 1080p or 4K.
 - **Kling 4.0 Flash** supports text-to-video, image-to-video with a single first frame, and omni reference with images, videos, and Elements. It supports 3–20 seconds at 720p.
 - Both models support smart shot splitting in omni reference, with a choice between generating synchronized sound and retaining source-video audio. A separate audio reference requires a declared audio input slot, as offered by Kling 4.0 omni reference.
 
