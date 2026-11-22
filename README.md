@@ -168,6 +168,19 @@ To install the full Agent Plugin with its bundled Skills, open **Powers** →
 `https://github.com/klingai-tech/claude-plugin-cn`. Kiro reads the root
 `plugin.json` and `mcp.json`; see the [Kiro install guide](https://kiro.dev/docs/powers/installation/).
 
+### Antigravity CLI
+
+Antigravity CLI can import plugins from an existing Claude Code installation. Install Kling AI CN, then import it into Antigravity:
+
+```bash
+claude plugin marketplace add klingai-tech/claude-plugin-cn
+claude plugin install kling-ai-cn@klingai-cn
+agy plugin import claude
+agy plugin list
+```
+
+If Kling AI CN is already installed in Claude Code, run `agy plugin import claude` and `agy plugin list`. Antigravity imports plugins from your Claude Code profile, so review the imported plugins. Complete OAuth in Antigravity with your China Kling account. Image and video generation uses China Kling credits.
+
 ## China service policies and data flow
 
 - [Privacy policy](https://klingai.com/docs/privacy-policy)
