@@ -155,6 +155,19 @@ support varying by surface; see [Use plugins in Claude](https://support.claude.c
 Authentication, uploads, and result presentation have not been validated on
 these Claude surfaces. Use each host's native plugin and connector controls.
 
+## Install in Kiro
+
+[![Add to Kiro](https://kiro.dev/images/add-to-kiro.svg)](https://kiro.dev/launch/mcp/add?name=Kling+AI+China&config=%7B%22url%22%3A%22https%3A%2F%2Fklingai.com%2Fmcp%2Fplugin%22%2C%22disabled%22%3Afalse%2C%22autoApprove%22%3A%5B%5D%7D)
+
+This one-click link adds the China remote MCP server. Kiro handles OAuth
+for this endpoint. Image and video generation consumes credits in the signed-in
+China Kling account.
+
+To install the full Agent Plugin with its bundled Skills, open **Powers** →
+**Add Custom Power** → **Import power from GitHub** and enter
+`https://github.com/klingai-tech/claude-plugin-cn`. Kiro reads the root
+`plugin.json` and `mcp.json`; see the [Kiro install guide](https://kiro.dev/docs/powers/installation/).
+
 ## China service policies and data flow
 
 - [Privacy policy](https://klingai.com/docs/privacy-policy)
